@@ -1,0 +1,4 @@
+task	KEYWORD1
+setInterval	KEYWORD2
+setCall	KEYWORD2
+check	KEYWORD2

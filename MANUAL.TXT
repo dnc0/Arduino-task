@@ -1,0 +1,27 @@
+//////////////////////////////////////////////
+ARDUINO TASK LIBRARY MANUAL
+/////////////////////////////////////////////
+
+How to create a task:
+	task taskname = task();
+	Or..
+	task taskname = task(function_to_be_called,interval)
+	EX:
+		task taskSensor = task(readSensor,500);
+			> execute the function "readSensor" every 500ms
+
+
+How to execute a task:
+	task.check();
+			> its check if the task should be performed
+
+
+How to change task attributes(configuration)
+	-change interval
+		task1.setIntervel(time)
+				> every "time" execute the task
+	-change the function to be executed
+		task1.setCall(function)
+				> "function" to be executed
+
+
